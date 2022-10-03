@@ -4,14 +4,14 @@
 
 [Bayley's Blocks](https://bayleysblocks.com) is a web and mobile puzzle game with daily shareable challenges. This repository provides code to generate a set of puzzles and a template function to solve them using a brute force method.
 
-The challenge is to replace the brute force method with a more efficient one. The template provides a way to measure the efficacy of any method by calculating the number of cycles using the [hwcounter](https://pypi.org/project/hwcounter/) library and the elapsed time.
+The challenge is to replace the brute force method with a more efficient one. The template provides a way to measure the efficacy of any method by calculating the elapsed time.
 
 ---
 
 ## Setup
 
 ```shell
-$ pip install -r requirements.txt
+$ pip3 install -r requirements.txt
 ```
 
 ## Run

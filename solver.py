@@ -2,19 +2,16 @@ import copy
 import time
 from typing import List, Tuple
 from models.puzzle import Puzzle
-from hwcounter import count, count_end
 from helper import print_progress_bar
 
-def solve_puzzle_set(puzzles: List[Puzzle]) -> Tuple[int, int]:
+def solve_puzzle_set(puzzles: List[Puzzle]) -> int:
     start_time = time.time()
-    start = count()
     print_progress_bar(0, len(puzzles), prefix = 'Solving Puzzles:', suffix = 'Complete', length = 50)
     for i, puzzle in enumerate(puzzles):
         solve_puzzle(puzzle)
         print_progress_bar(i + 1, len(puzzles), prefix = 'Solving Puzzles:', suffix = 'Complete', length = 50)
-    total_cycles = count_end() - start
     total_time = time.time() - start_time
-    return total_cycles, total_time
+    return total_time
 
 def solve_puzzle(puzzle: Puzzle) -> Tuple[List[int], bool]:
     # create a deep copy of the puzzle
