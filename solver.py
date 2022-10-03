@@ -4,7 +4,6 @@ from typing import List, Tuple
 from models.puzzle import Puzzle
 from hwcounter import count, count_end
 from helper import print_progress_bar
-from secret_methods import faster_method
 
 def solve_puzzle_set(puzzles: List[Puzzle]) -> Tuple[int, int]:
     start_time = time.time()
@@ -20,9 +19,11 @@ def solve_puzzle_set(puzzles: List[Puzzle]) -> Tuple[int, int]:
 def solve_puzzle(puzzle: Puzzle) -> Tuple[List[int], bool]:
     # create a deep copy of the puzzle
     puzzle_copy = copy.deepcopy(puzzle)
+
     # ************* add implementation here  *************
     route, solved = brute_force_method(puzzle_copy)
     # ****************************************************
+    
     return route, solved
 
 def brute_force_method(puzzle: Puzzle) -> Tuple[List[int], bool]:

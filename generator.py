@@ -1,5 +1,3 @@
-# possible functions
-# generate
 from typing import List
 import random
 from models.puzzle import Puzzle
@@ -42,7 +40,6 @@ def __is_puzzle_in_list(blocks_to_compare: List[int], puzzles: List[Puzzle]) -> 
             return True
     return False
 
-# number of puzzles, size, number of blocks, random seed
 def generate_puzzles(quantity: int, size: int, blocks_per_puzzle: int, start_seed = 1) -> List[Puzzle]:
     # trace out path
     puzzles: List[Puzzle] = []

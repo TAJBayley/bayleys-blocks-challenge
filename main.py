@@ -1,8 +1,6 @@
-from generator import generate_puzzles
-from typing import List
 from models.puzzle import Puzzle
 from solver import solve_puzzle_set
-from read_write import write_puzzles, read_puzzles
+from read_write import read_puzzles
 
 def main():
     print("Welcome to Bayley's Blocks Challenge!")

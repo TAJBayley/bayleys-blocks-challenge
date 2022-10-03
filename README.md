@@ -10,14 +10,6 @@ The challenge is to replace the brute force method with a more efficient one. Th
 
 ## Setup
 
-On Unix or MacOS, using the bash shell
-
-```shell
-$ source venv/bin/activate
-```
-
-Installing required packages
-
 ```shell
 $ pip install -r requirements.txt
 ```
