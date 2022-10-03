@@ -8,12 +8,6 @@ The challenge is to replace the brute force method with a more efficient one. Th
 
 ---
 
-## Setup
-
-```shell
-$ pip3 install -r requirements.txt
-```
-
 ## Run
 
 To run:
