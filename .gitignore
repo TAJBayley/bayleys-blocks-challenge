@@ -1,0 +1,5 @@
+.DS_Store
+*.py[co]
+# PyCharm IDE
+.idea
+secret_methods.py
